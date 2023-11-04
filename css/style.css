@@ -124,9 +124,14 @@ img {
 }
 
 .w1280 {
-  width: 85% !important;
+  width: 90% !important;
   max-width: 1280px;
   margin: auto;
+}
+@media screen and (min-width: 767px) {
+  .w1280 {
+    width: 85% !important;
+  }
 }
 .w1280.-s100 {
   width: 100% !important;
@@ -201,12 +206,22 @@ img {
   }
 }
 
-.l-mgt_-30 {
-  margin-top: -27px !important;
+.l-mgt_top {
+  margin-top: -5vh;
 }
 @media screen and (min-width: 767px) {
-  .l-mgt_-30 {
-    margin-top: -30px !important;
+  .l-mgt_top {
+    margin-top: -15vh;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .l-mgt_top {
+    margin-top: -18vh;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .l-mgt_top {
+    margin-top: -25vh;
   }
 }
 
@@ -470,7 +485,6 @@ img {
   height: auto;
 }
 .l-contents.-card {
-  padding: 5% 1%;
   background: white;
   filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.2));
 }
@@ -516,15 +530,21 @@ img {
   position: absolute;
 }
 .l-contents.-img-bg .l-contentsBox.-f-view_text {
-  right: 0;
-  bottom: -6%;
+  right: 5%;
+  bottom: 6%;
   width: auto;
 }
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-f-view_text {
+    right: 0;
+    bottom: -6%;
+  }
+}
 .l-contents.-img-bg .l-contentsBox.-youtubeBox {
-  top: 50%;
+  top: 88%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 75%;
 }
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg .l-contentsBox.-youtubeBox {
@@ -1276,37 +1296,37 @@ img {
   margin: 40px auto !important;
 }
 @media screen and (min-width: 767px) {
-  .l-footer.-higashikurume, .l-footer.-wakaba {
+  .l-footer.-hannou, .l-footer.-higashikurume, .l-footer.-wakaba {
     display: flex;
     flex-wrap: nowrap;
     margin: 40px auto 80px !important;
   }
 }
-.l-footer.-higashikurume .l-footer--title, .l-footer.-wakaba .l-footer--title {
+.l-footer.-hannou .l-footer--title, .l-footer.-higashikurume .l-footer--title, .l-footer.-wakaba .l-footer--title {
   width: 60%;
   height: auto;
   margin: auto !important;
 }
 @media screen and (max-width: 768px) {
-  .l-footer.-higashikurume .l-footer--title, .l-footer.-wakaba .l-footer--title {
+  .l-footer.-hannou .l-footer--title, .l-footer.-higashikurume .l-footer--title, .l-footer.-wakaba .l-footer--title {
     margin: auto auto 5px !important;
   }
 }
 @media screen and (min-width: 767px) {
-  .l-footer.-higashikurume .l-footer--title, .l-footer.-wakaba .l-footer--title {
+  .l-footer.-hannou .l-footer--title, .l-footer.-higashikurume .l-footer--title, .l-footer.-wakaba .l-footer--title {
     width: 50%;
     max-width: 330px;
     margin-right: 25px !important;
   }
 }
-.l-footer.-higashikurume .l-footer--tel, .l-footer.-wakaba .l-footer--tel {
+.l-footer.-hannou .l-footer--tel, .l-footer.-higashikurume .l-footer--tel, .l-footer.-wakaba .l-footer--tel {
   height: auto;
   width: 60%;
   margin: auto !important;
   text-align: center;
 }
 @media screen and (min-width: 767px) {
-  .l-footer.-higashikurume .l-footer--tel, .l-footer.-wakaba .l-footer--tel {
+  .l-footer.-hannou .l-footer--tel, .l-footer.-higashikurume .l-footer--tel, .l-footer.-wakaba .l-footer--tel {
     width: 30%;
     margin-left: 25px !important;
   }
@@ -2362,8 +2382,8 @@ img {
   content: "";
   position: absolute;
   top: 50%;
-  left: 30%;
-  width: 60px;
+  left: 10%;
+  width: 35px;
   height: 1px;
   background: black;
 }
@@ -2382,8 +2402,8 @@ img {
   content: "";
   position: absolute;
   top: 50%;
-  right: 30%;
-  width: 60px;
+  right: 10%;
+  width: 35px;
   height: 1px;
   background: black;
 }
@@ -2543,7 +2563,7 @@ img {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  z-index: 9999;
+  z-index: 9;
 }
 #sp-btm-contactArea .base-bg {
   max-width: 100%;
@@ -2555,7 +2575,7 @@ img {
   position: fixed;
   top: 33%;
   right: 2%;
-  z-index: 9999;
+  z-index: 9;
 }
 #pc-right-contactArea .base-bg {
   height: auto;
@@ -4806,9 +4826,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #942D2F;
+  background: #002a37;
   border: 1px solid rgba(255, 255, 255, 0.432);
-  border-radius: 5px;
   width: 45px;
   height: 45px;
   color: #fff;

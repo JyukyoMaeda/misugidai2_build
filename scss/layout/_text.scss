@@ -505,8 +505,8 @@
             content: "";
             position: absolute;
             top: 50%;
-            left: 30%;
-            width: 60px;
+            left: 10%;
+            width: 35px;
             height: 1px;
             background: black;
             @include mq(tb){
@@ -521,8 +521,8 @@
             content: "";
             position: absolute;
             top: 50%;
-            right: 30%;
-            width: 60px;
+            right: 10%;
+            width: 35px;
             height: 1px;
             background: black;
             @include mq(tb){

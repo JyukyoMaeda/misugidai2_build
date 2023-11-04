@@ -7,7 +7,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    z-index: 9999;
+    z-index: 9;
     .base-bg{
         max-width: 100%;
     }
@@ -21,7 +21,7 @@
     position: fixed;
     top: 33%;
     right: 2%;
-    z-index: 9999;
+    z-index: 9;
     .base-bg{
         height: auto;
         max-width: 45px;

@@ -2,7 +2,7 @@
 	width: 100%;
 	height: auto;
 	&.-card{
-		padding: 5% 1%;
+		// padding: 5% 1%;
 		background: white;
 		filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.2));
 		@include mq(tb){
@@ -41,16 +41,20 @@
 			width: 100%;
 			position: absolute;
 			&.-f-view_text{
-				right: 0;
-				bottom: -6%;
-				// transform: translate(-50%, -50%);
+				right: 5%;
+				bottom: 6%;
 				width: auto;
+				@include mq(tb){
+					right: 0;
+					bottom: -6%;
+					// transform: translate(-50%, -50%);
+				}
 			}
 			&.-youtubeBox{
-				top: 50%;
+				top: 88%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				width: 50%;
+				width: 75%;
 				@include mq(tb){
 					top: 83%;
 					left: 25.4%;

@@ -69,9 +69,13 @@ img{
 
 
 .w1280{
-	width: 85% !important;
+	width: 90% !important;
 	max-width: 1280px;
 	margin: auto;
+	@include mq	(tb){
+		width: 85% !important;
+	}
+
 	&.-s100{
 		width: 100% !important;
 	}
@@ -134,10 +138,16 @@ img{
 		margin-top: -10px !important;
 	}
 }
-.l-mgt_-30{
-	margin-top: -27px !important;
-	@media screen and (min-width: 767px){
-		margin-top: -30px !important;
+.l-mgt_top{
+	margin-top: -5vh;
+	@include mq(tb){
+		margin-top: -15vh;
+	}
+	@include mq(tb-pc1000){
+		margin-top: -18vh;
+	}
+	@include mq(tb-pc1600){
+		margin-top: -25vh;
 	}
 }
 .l-mgb_-2_s{
