@@ -1,6 +1,11 @@
 .l-contents{
 	width: 100%;
 	height: auto;
+	&.-fview{
+		@include mq(tb){
+			z-index: 999;
+		}
+	}
 	&.-card{
 		// padding: 5% 1%;
 		background: white;
@@ -9,7 +14,8 @@
 			padding: 5% 1%;
 		}
 		@include mq(tb-pc1600){
-			padding: 5% 3%;
+			// padding: 5% 3%;
+			padding: 5% 14%;
 		}
 	}
 	&.-img{// 背景画像のみ
@@ -59,6 +65,11 @@
 					top: 83%;
 					left: 25.4%;
 					width: 33.3333%;
+				}
+				@include mq(tb-pc1600){
+					top: 82%;
+					left: 32.4%;
+					width: 26.3333%;
 				}
 			}
 
@@ -153,4 +164,11 @@
 	}
 }
 
-
+#content1{
+	@include mq(tb){
+		margin-top: -23vh;
+	}
+	@include mq(tb-pc1600){
+		margin-top: -31vh;
+	}
+}

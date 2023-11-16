@@ -70,7 +70,8 @@ img{
 
 .w1280{
 	width: 94% !important;
-	max-width: 1280px;
+	// max-width: 1280px;
+	max-width: 1680px;
 	margin: auto;
 	@include mq	(tb){
 		width: 85% !important;

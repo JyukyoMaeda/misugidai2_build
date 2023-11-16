@@ -125,7 +125,7 @@ img {
 
 .w1280 {
   width: 94% !important;
-  max-width: 1280px;
+  max-width: 1680px;
   margin: auto;
 }
 @media screen and (min-width: 767px) {
@@ -484,6 +484,11 @@ img {
   width: 100%;
   height: auto;
 }
+@media screen and (min-width: 767px) {
+  .l-contents.-fview {
+    z-index: 999;
+  }
+}
 .l-contents.-card {
   background: white;
   filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.2));
@@ -495,7 +500,7 @@ img {
 }
 @media screen and (min-width: 1600px) {
   .l-contents.-card {
-    padding: 5% 3%;
+    padding: 5% 14%;
   }
 }
 .l-contents.-img {
@@ -551,6 +556,13 @@ img {
     top: 83%;
     left: 25.4%;
     width: 33.3333%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .l-contents.-img-bg .l-contentsBox.-youtubeBox {
+    top: 82%;
+    left: 32.4%;
+    width: 26.3333%;
   }
 }
 .l-contents.-img-bg .l-contentsBox.-right-topBtn {
@@ -626,6 +638,17 @@ img {
 @media screen and (min-width: 1400px) {
   .l-contents.-btnArea.-return a {
     width: 6%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #content1 {
+    margin-top: -23vh;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #content1 {
+    margin-top: -31vh;
   }
 }
 
