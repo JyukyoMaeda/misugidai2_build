@@ -1,0 +1,216 @@
+// コンテンツ
+.c-container{
+	width: 100vw;
+	height: auto;
+}
+
+.c-contents{
+	position: relative;
+	.imgBox{
+		&.-sp{
+			@include max(768){
+				width: 100vw;
+				height: 710px;
+			}
+		}
+	}
+	&.-imgBg{//背景画像
+		.c-contentsBox{//背景要素内 > 設置場所
+			position: absolute;
+			&.-center{ // 基本
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+			}
+			// 間取図
+			&.-madoriImg{
+				@include min(768){
+					top: 35%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+				@include min(1400){
+					top: 33%;
+				}
+			}
+			&.-click-modal01{
+				top: 72.5%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				// background: rgba(51, 51, 51, 0.438);
+				width: 78%;
+				height: 33%;
+				@include min(768){
+					top: 69%;
+					width: 78%;
+					height: 30%;
+				}
+			}
+			// スライダー
+			&.-sliderArea{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				@include min(768){
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				
+				}
+			}
+			&.-locationArea{
+				top: 78.5%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 96.3%;
+				@include min(768){
+					top: 78%;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+}
+
+	// ロゴ関係
+	.logoArea{
+		margin: auto;
+		width: 32%;
+		@include min(768){
+			width: 18%;
+		}
+		@include min(1600){
+			width: 12%;
+		}
+		&.-c-In{
+			width: auto;
+			margin-left: 0;
+			img{
+				width: 7%;
+				@include min(768){
+					width: 10%;
+				}
+			}
+		}
+		&.-mugen{
+			@include min(768){
+				width: 10%;
+			}
+			@include min(1600){
+				width: 13%;
+			}
+		}
+	}
+	// タイトル関係
+	.titleArea{
+			&.-Concept,
+			&.-Planning,
+			&.-Location{
+				img{
+					width: 33%;
+					@include min(768){
+						width: 33%;
+					}
+				}
+			}
+			&.-ForExample{
+				img{
+					width: 43%;
+					@include min(768){
+						width: 33%;
+					}
+				}
+			}
+			&.-PrivateSkyTerrace{
+				img{
+					width: 68%;
+					@include min(768){
+						width: 53%;
+					}
+				}
+			}
+			&.-MakefullGallery{
+				img{
+					width: 55%;
+					@include min(768){
+						width: 53%;
+					}
+				}
+			}
+			&.-LifeInformation{
+				img{
+					width: 55%;
+					@include min(768){
+						width: 30%;
+					}
+				}
+			}
+		}
+	// スペル
+	.spell{
+		width: 33%;
+		@include min(768){
+			width: 33%;
+		}
+	}
+
+
+	.w1100{
+		@include min(768){
+			width: 70%;
+			max-width: 1200px;
+			margin: auto;
+		}
+		@include min(1600){
+			width: 65%;
+		}
+	}
+	.w900{
+		@include min(768){
+			width: 70%;
+			max-width: 900px;
+			margin: auto;
+		}
+		@include min(1600){
+			width: 65%;
+		}
+	}
+	.w550{
+		@include min(768){
+			width: 70%;
+			max-width: 600px;
+			margin: auto;
+		}
+	}
+	.w95{
+		@include min(768){
+			width: 95%;
+			margin: auto;
+		}
+	}
+	.w95s{
+		@include max(768){
+			width: 95%;
+			margin: auto;
+		}
+	}
+	.w90s{
+		@include max(768){
+			width: 90%;
+			margin: auto;
+		}
+	}
+	.w85s{
+		@include max(768){
+			width: 85%;
+			margin: auto;
+		}
+	}
+	.w80s{
+		@include max(768){
+			width: 80%;
+			margin: auto;
+		}
+	}
