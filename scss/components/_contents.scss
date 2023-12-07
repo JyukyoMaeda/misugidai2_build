@@ -23,6 +23,14 @@
 				transform: translate(-50%, -50%);
 				width: 100%;
 			}
+			// ファーストビュー > お問合せ
+			&.-f-contact{
+				top: 5px;
+				left: 75%;
+				@include min(768){
+					width: 300px;
+				}
+			}
 			// 間取図
 			&.-madoriImg{
 				@include min(768){
