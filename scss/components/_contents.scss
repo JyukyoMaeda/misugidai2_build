@@ -3,6 +3,13 @@
 	width: 100vw;
 	height: auto;
 }
+.messages{
+	width: 65%;
+	margin: auto;
+	@include min(768){
+		width: 65%;
+	}
+}
 
 .c-contents{
 	position: relative;
@@ -28,7 +35,10 @@
 				top: 5px;
 				left: 75%;
 				@include min(768){
-					width: 300px;
+					top: 3.5%;
+					left: 73%;
+					width: 24%;
+					max-width: 380px;
 				}
 			}
 			// 間取図

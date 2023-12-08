@@ -2559,6 +2559,16 @@ button.swiper-pagination-bullet {
   height: auto;
 }
 
+.messages {
+  width: 65%;
+  margin: auto;
+}
+@media (width >= 768px) {
+  .messages {
+    width: 65%;
+  }
+}
+
 .c-contents {
   position: relative;
 }
@@ -2583,7 +2593,10 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-f-contact {
-    width: 300px;
+    top: 3.5%;
+    left: 73%;
+    width: 24%;
+    max-width: 380px;
   }
 }
 @media (width >= 768px) {
@@ -3110,7 +3123,6 @@ button.swiper-pagination-bullet {
 }
 .c-flex.-top-contact li {
   width: 50%;
-  padding: 3% 2%;
 }
 
 html {
@@ -3542,6 +3554,9 @@ a {
 }
 .popup-window.-madoriImg {
   height: auto;
+}
+.popup-window.-gaiyou {
+  height: 80vh;
 }
 .popup-close {
   cursor: pointer;

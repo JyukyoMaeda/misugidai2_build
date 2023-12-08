@@ -40,7 +40,6 @@
 
         width: 90vw;
         max-width: 1280px;
-        // height: 80vh;
         padding: 20px;
         background-color: #00000000;
         border-radius: 6px;
@@ -53,6 +52,9 @@
         }
         &.-madoriImg {
             height: auto;
+        }
+        &.-gaiyou{
+            height: 80vh;
         }
     }
     &-close {
