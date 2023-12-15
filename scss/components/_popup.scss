@@ -3,6 +3,7 @@
 #popup-img {
     display: none;
     &:checked ~ .popup-overlay {
+        
         background-color: #00000070;
         z-index: 99998;
         opacity: 1;

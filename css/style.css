@@ -2587,14 +2587,10 @@ button.swiper-pagination-bullet {
   transform: translate(-50%, -50%);
   width: 100%;
 }
-.c-contents.-imgBg .c-contentsBox.-f-contact {
-  top: 5px;
-  left: 75%;
-}
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-f-contact {
     top: 3.5%;
-    left: 73%;
+    left: 77%;
     width: 24%;
     max-width: 380px;
   }
