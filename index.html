@@ -23,6 +23,8 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/lightbox.js"></script>
 
     <!-- Fonts -->
     <!-- <script>
@@ -145,7 +147,7 @@
                 </div>
             <!-- //固定アイテム -->
         </div>
-        <!-- 06.スライダー -->
+        <!-- 06.スライダー / 2024_0105_機能追加 -->
         <div class="c-contents -imgBg mgb5 ">
             <div class="imgBox w1100 w90s">
                 <img class="pc" src="images/bg/top-content06.jpg" alt="Photo Gallery">
@@ -154,18 +156,18 @@
             <div class="c-contentsBox -sliderArea w1100 w90s">
                 <div class="swiper swiperMain">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/slider/2x/slider01.jpg" alt="写真01"></div>
-                        <div class="swiper-slide"><img src="images/slider/2x/slider02.jpg" alt="写真02"></div>
-                        <div class="swiper-slide"><img src="images/slider/2x/slider03.jpg" alt="写真03"></div>
-                        <div class="swiper-slide"><img src="images/slider/2x/slider04.jpg" alt="写真04"></div>
-                        <div class="swiper-slide"><img src="images/slider/2x/slider05.jpg" alt="写真05"></div>
-                        <div class="swiper-slide"><img src="images/slider/2x/slider06.jpg" alt="写真06"></div>
-                        <div class="swiper-slide"><img src="images/slider/2x/slider07.jpg" alt="写真07"></div>
-                        <div class="swiper-slide"><img src="images/slider/2x/slider08.jpg" alt="写真08"></div>
-                        <div class="swiper-slide"><img src="images/slider/2x/slider09.jpg" alt="写真09"></div>
-                        <div class="swiper-slide"><img src="images/slider/2x/slider10.jpg" alt="写真10"></div>
-                        <div class="swiper-slide"><img src="images/slider/2x/slider11.jpg" alt="写真11"></div>
-                        <div class="swiper-slide"><img src="images/slider/2x/slider12.jpg" alt="写真12"></div>
+                        <div class="swiper-slide"><a href="images/slider/2x/slider01.jpg"  data-lightbox="layout-pic" data-title="現地写真 1/12"><img src="images/slider/2x/slider01.jpg" alt="写真01"></a></div>
+                        <div class="swiper-slide"><a href="images/slider/2x/slider02.jpg"  data-lightbox="layout-pic" data-title="現地写真 2/12"><img src="images/slider/2x/slider02.jpg" alt="写真02"></a></div>
+                        <div class="swiper-slide"><a href="images/slider/2x/slider03.jpg"  data-lightbox="layout-pic" data-title="現地写真 3/12"><img src="images/slider/2x/slider03.jpg" alt="写真03"></a></div>
+                        <div class="swiper-slide"><a href="images/slider/2x/slider04.jpg"  data-lightbox="layout-pic" data-title="現地写真 4/12"><img src="images/slider/2x/slider04.jpg" alt="写真04"></a></div>
+                        <div class="swiper-slide"><a href="images/slider/2x/slider05.jpg"  data-lightbox="layout-pic" data-title="現地写真 5/12"><img src="images/slider/2x/slider05.jpg" alt="写真05"></a></div>
+                        <div class="swiper-slide"><a href="images/slider/2x/slider06.jpg"  data-lightbox="layout-pic" data-title="現地写真 6/12"><img src="images/slider/2x/slider06.jpg" alt="写真06"></a></div>
+                        <div class="swiper-slide"><a href="images/slider/2x/slider07.jpg"  data-lightbox="layout-pic" data-title="現地写真 7/12"><img src="images/slider/2x/slider07.jpg" alt="写真07"></a></div>
+                        <div class="swiper-slide"><a href="images/slider/2x/slider08.jpg"  data-lightbox="layout-pic" data-title="現地写真 8/12"><img src="images/slider/2x/slider08.jpg" alt="写真08"></a></div>
+                        <div class="swiper-slide"><a href="images/slider/2x/slider09.jpg"  data-lightbox="layout-pic" data-title="現地写真 9/12"><img src="images/slider/2x/slider09.jpg" alt="写真09"></a></div>
+                        <div class="swiper-slide"><a href="images/slider/2x/slider10.jpg"  data-lightbox="layout-pic" data-title="現地写真 10/12"><img src="images/slider/2x/slider10.jpg" alt="写真10"></a></div>
+                        <div class="swiper-slide"><a href="images/slider/2x/slider11.jpg"  data-lightbox="layout-pic" data-title="現地写真 11/12"><img src="images/slider/2x/slider11.jpg" alt="写真11"></a></div>
+                        <div class="swiper-slide"><a href="images/slider/2x/slider12.jpg"  data-lightbox="layout-pic" data-title="現地写真 12/12"><img src="images/slider/2x/slider12.jpg" alt="写真12"></a></div>
                     </div>
                     <div class="swiper-pagination"></div>
 
@@ -176,6 +178,7 @@
                 </div>
             </div>
         </div>
+
         <!-- 07.Life Information 都会の喧騒を離れて、悠々自適に暮らす喜び。 -->
         <div class="c-contents -imgBg w1100 w95s mgb5 mgb10s">
             <div class="imgBox">
@@ -287,6 +290,8 @@
             <iframe id="inlineFrame" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712729516"></iframe>
         </div>
     <!-- //固定アイテム -->
+
+    <!-- スライダー関係 -->
     <script>
         var mainSwiper = new Swiper(".swiperMain", {
             autoplay: true,
@@ -313,6 +318,15 @@
                 }
             }
         });
+    
+        // 画像モーダル（inline）
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'positionFromTop': -200,
+            'disableScrolling': true
+        });
     </script>
+
 </body>
 </html>
